@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathwa Snake Identifier 🐍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sathwa Snake Identifier 🐍</h1>
+        <p>Upload an image to detect snake species.</p>
+
+        <input type="file" id="imageUpload" accept="image/*">
+        <button id="detectButton">Detect Snake</button>
+
+        <div id="imagePreviewContainer" class="hidden">
+            <h2>Uploaded Image:</h2>
+            <img id="imagePreview" src="#" alt="Image Preview" style="max-width: 100%; height: auto;">
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Detection Results:</h2>
+            <div id="detectionOutput"></div>
+        </div>
+
+        <div id="noObjectDetected" class="hidden">
+            <p>😔 No snake detected. Please try again with another image!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
